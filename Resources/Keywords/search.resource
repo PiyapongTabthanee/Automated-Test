@@ -74,55 +74,55 @@ Verify Play Series
     END
 
 
-# Press And Verify Forward Series
-#     ${before}    Get Text    ${lbl_time_current}
-#     Click Element    ${btn_forward}
-#     ${after}    Get Text    ${lbl_time_current}
-#         IF    '${after}' > '${before}' + '00:15'
-#     Log    ture
-#     ELSE    
-#         Fail
-#     END
+Press And Verify Forward Series
+    ${before}    Get Text    ${lbl_time_current}
+    Click Element    ${btn_forward}
+    ${after}    Get Text    ${lbl_time_current}
+        IF    '${after}' > '${before}' + '00:15'
+    Log    ture
+    ELSE    
+        Fail
+    END
 
-# Press And Verify Backward Series
-#     ${before}    Get Text    ${lbl_time_current}
-#     Click Element    ${btn_backward}
-#     ${after}    Get Text    ${lbl_time_current}
-#         IF    '${after}' < '${before}' 
-#     Log    ture
-#     ELSE    
-#         Fail
-#     END
+Press And Verify Backward Series
+    ${before}    Get Text    ${lbl_time_current}
+    Click Element    ${btn_backward}
+    ${after}    Get Text    ${lbl_time_current}
+        IF    '${after}' < '${before}' 
+    Log    ture
+    ELSE    
+        Fail
+    END
 
-# Press Pause And Verify
-#     ${before}    Get Text    ${lbl_time_current}
-#     Click Element    ${btn_pause}
-#     Wait Until Page Does Not Contain Element    ${btn_pause}    20s
-#     Click Element    ${btn_framelayout}  
-#     ${after}    Get Text    ${lbl_time_current}
-#         IF    '${after}' == '${before}'
-#     Log    ture
-#     ELSE    
-#         Fail
-#     END
+Press Pause And Verify
+    ${before}    Get Text    ${lbl_time_current}
+    Click Element    ${btn_pause}
+    Wait Until Page Does Not Contain Element    ${btn_pause}    20s
+    Click Element    ${btn_framelayout}  
+    ${after}    Get Text    ${lbl_time_current}
+        IF    '${after}' == '${before}'
+    Log    ture
+    ELSE    
+        Fail
+    END
 
-# Drag Progress bar Forward
-#     ${element_size}    Get Element Size    class=android.widget.SeekBar
-#     ${element_location}    Get Element Location    class=android.widget.SeekBar
-#     ${start_x}         Evaluate      ${element_location['x']} + (${element_size['width']} * 0.1)
-#     ${start_y}         Evaluate      ${element_location['y']} + (${element_size['height']} * 0.1)
-#     ${end_x}           Evaluate      ${element_location['x']} + (${element_size['width']} * 1)
-#     ${end_y}           Evaluate      ${element_location['y']} + (${element_size['height']} * 0.1)
-#     Swipe              ${start_x}    ${start_y}  ${end_x}  ${end_y}  500
+Drag Progress bar Forward
+    ${element_size}    Get Element Size    class=android.widget.SeekBar
+    ${element_location}    Get Element Location    class=android.widget.SeekBar
+    ${start_x}         Evaluate      ${element_location['x']} + (${element_size['width']} * 0.1)
+    ${start_y}         Evaluate      ${element_location['y']} + (${element_size['height']} * 0.1)
+    ${end_x}           Evaluate      ${element_location['x']} + (${element_size['width']} * 1)
+    ${end_y}           Evaluate      ${element_location['y']} + (${element_size['height']} * 0.1)
+    Swipe              ${start_x}    ${start_y}  ${end_x}  ${end_y}  500
 
-# Drag Progress bar Backward
-#     ${element_size}    Get Element Size    class=android.widget.SeekBar
-#     ${element_location}    Get Element Location    class=android.widget.SeekBar
-#     ${start_x}         Evaluate      ${element_location['x']} + (${element_size['width']} * 1)
-#     ${start_y}         Evaluate      ${element_location['y']} + (${element_size['height']} * 0.1)
-#     ${end_x}           Evaluate      ${element_location['x']} + (${element_size['width']} * 0.1)
-#     ${end_y}           Evaluate      ${element_location['y']} + (${element_size['height']} * 0.1)
-#     Swipe              ${start_x}    ${start_y}  ${end_x}  ${end_y}  500
+Drag Progress bar Backward
+    ${element_size}    Get Element Size    class=android.widget.SeekBar
+    ${element_location}    Get Element Location    class=android.widget.SeekBar
+    ${start_x}         Evaluate      ${element_location['x']} + (${element_size['width']} * 1)
+    ${start_y}         Evaluate      ${element_location['y']} + (${element_size['height']} * 0.1)
+    ${end_x}           Evaluate      ${element_location['x']} + (${element_size['width']} * 0.1)
+    ${end_y}           Evaluate      ${element_location['y']} + (${element_size['height']} * 0.1)
+    Swipe              ${start_x}    ${start_y}  ${end_x}  ${end_y}  500
     
 
  
