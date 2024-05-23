@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-22T18:13:32.169121" rpa="false" schemaversion="5">
+<suite id="s1" name="Ais Play" source="C:\Users\piyao\OneDrive\Desktop\Test_Appium\TestSuites\ais_play.robot">
+<test id="s1-t1" name="Appium001 Open And Play Vido" line="6">
+<kw name="Open_Application_AIS_PLAY" owner="search">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=14</arg>
+<arg>deviceName=R9WWA03R8AL</arg>
+<arg>appPackage=com.ais.mimo.AISPlay</arg>
+<arg>appActivity=net.vimmi.lib.ui.main.MainActivity</arg>
+<arg>fullReset=false</arg>
+<arg>automationName=UiAutomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-04-22T18:13:34.763465" elapsed="19.633375"/>
+</kw>
+<status status="PASS" start="2024-04-22T18:13:34.760463" elapsed="19.636377"/>
+</kw>
+<kw name="Click_Iam_Guest" owner="search">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:13:54.407848" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.ais.mimo.AISPlay:id/guestLoginButton"]'.</msg>
+<msg time="2024-04-22T18:13:57.874714" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.ais.mimo.AISPlay:id/guestLoginButton"]</msg>
+<arg>${btn_guest}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T18:13:54.402843" elapsed="3.471871"/>
+</kw>
+<status status="PASS" start="2024-04-22T18:13:54.400844" elapsed="3.473870"/>
+</kw>
+<kw name="Click_Accept_Conditions" owner="search">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:13:59.478639" level="INFO">xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/btn_accept"]</msg>
+<arg>${btn_conditions}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-22T18:13:57.880716" elapsed="1.597923"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:13:59.486642" level="INFO">Clicking element '//*[@resource-id="com.ais.mimo.AISPlay:id/btn_accept"]'.</msg>
+<msg time="2024-04-22T18:13:59.728701" level="INFO">xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/btn_accept"]</msg>
+<arg>${btn_conditions}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T18:13:59.479639" elapsed="0.249062"/>
+</kw>
+<status status="PASS" start="2024-04-22T18:13:57.877724" elapsed="1.851979"/>
+</kw>
+<kw name="Click_Series" owner="search">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:04.763718" level="INFO">xpath criteria: //*[@resource-id="android:id/text1" and @text="SERIES"]
+xpath criteria: //*[@resource-id="android:id/text1" and @text="SERIES"]
+xpath criteria: //*[@resource-id="android:id/text1" and @text="SERIES"]
+xpath criteria: //*[@resource-id="android:id/text1" and @text="SERIES"]
+xpath criteria: //*[@resource-id="android:id/text1" and @text="SERIES"]
+xpath criteria: //*[@resource-id="android:id/text1" and @text="SERIES"]</msg>
+<arg>${btn_series}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-22T18:13:59.732704" elapsed="5.032016"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:04.770721" level="INFO">Clicking element '//*[@resource-id="android:id/text1" and @text="SERIES"]'.</msg>
+<msg time="2024-04-22T18:14:07.229340" level="INFO">xpath criteria: //*[@resource-id="android:id/text1" and @text="SERIES"]</msg>
+<arg>${btn_series}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T18:14:04.764720" elapsed="2.464620"/>
+</kw>
+<status status="PASS" start="2024-04-22T18:13:59.731702" elapsed="7.497638"/>
+</kw>
+<kw name="Swipe_Down_To_Horror_Series" owner="search">
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>350</arg>
+<arg>1597</arg>
+<arg>350</arg>
+<arg>0</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-04-22T18:14:07.231339" elapsed="1.451364"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>350</arg>
+<arg>1597</arg>
+<arg>350</arg>
+<arg>0</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-04-22T18:14:08.683702" elapsed="1.362758"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>350</arg>
+<arg>20</arg>
+<arg>350</arg>
+<arg>0</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2024-04-22T18:14:10.047482" elapsed="1.723412"/>
+</kw>
+<status status="PASS" start="2024-04-22T18:14:07.230339" elapsed="4.540555"/>
+</kw>
+<kw name="Click_Choose_Series" owner="search">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:15.936459" level="INFO">xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/titleTextView" and @text="Angkhan Khlumpong The Series"]</msg>
+<arg>${btn_choose_series}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-22T18:14:11.774895" elapsed="4.161564"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:15.939461" level="INFO">Clicking element '//*[@resource-id="com.ais.mimo.AISPlay:id/titleTextView" and @text="Angkhan Khlumpong The Series"]'.</msg>
+<msg time="2024-04-22T18:14:16.812681" level="INFO">xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/titleTextView" and @text="Angkhan Khlumpong The Series"]</msg>
+<arg>${btn_choose_series}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T18:14:15.936459" elapsed="0.876222"/>
+</kw>
+<status status="PASS" start="2024-04-22T18:14:11.773894" elapsed="5.038787"/>
+</kw>
+<kw name="Verifies_Series" owner="search">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:18.506630" level="INFO">xpath criteria: //android.widget.TextView[@text="Angkhan Khlumpong The Series"]
+xpath criteria: //android.widget.TextView[@text="Angkhan Khlumpong The Series"]</msg>
+<arg>${lbl_verify_series}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-22T18:14:16.814681" elapsed="1.691949"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:18.513631" level="INFO">Verifying element '//android.widget.TextView[@text="Angkhan Khlumpong The Series"]' contains exactly text 'Angkhan Khlumpong The Series'.</msg>
+<msg time="2024-04-22T18:14:18.877726" level="INFO">xpath criteria: //android.widget.TextView[@text="Angkhan Khlumpong The Series"]</msg>
+<arg>${lbl_verify_series}</arg>
+<arg>${Ver_Se}</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<status status="PASS" start="2024-04-22T18:14:18.507629" elapsed="0.370097"/>
+</kw>
+<arg>${text_series1}</arg>
+<status status="PASS" start="2024-04-22T18:14:16.813681" elapsed="2.064045"/>
+</kw>
+<kw name="Click_Episode" owner="search">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:19.238815" level="INFO">xpath criteria: //*[@text="The Cursed House (1/4)"]</msg>
+<arg>${btn_ep1/4}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-22T18:14:18.879725" elapsed="0.360090"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:19.242814" level="INFO">Clicking element '//*[@text="The Cursed House (1/4)"]'.</msg>
+<msg time="2024-04-22T18:14:19.673926" level="INFO">xpath criteria: //*[@text="The Cursed House (1/4)"]</msg>
+<arg>${btn_ep1/4}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T18:14:19.239815" elapsed="0.435113"/>
+</kw>
+<status status="PASS" start="2024-04-22T18:14:18.878724" elapsed="0.796204"/>
+</kw>
+<kw name="Verifies_Series_Episode" owner="search">
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:19.682927" level="INFO">Verifying element '//*[@resource-id="com.ais.mimo.AISPlay:id/fragment_movie_info_title_text"]' contains exactly text 'The Cursed House (1/4)'.</msg>
+<msg time="2024-04-22T18:14:21.406368" level="INFO">xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/fragment_movie_info_title_text"]</msg>
+<arg>${lbl_verify_series_ep1/4}</arg>
+<arg>${Ver_Ep}</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<status status="PASS" start="2024-04-22T18:14:19.678924" elapsed="1.727444"/>
+</kw>
+<arg>${text_ep1/4}</arg>
+<status status="PASS" start="2024-04-22T18:14:19.677928" elapsed="1.728440"/>
+</kw>
+<kw name="Press Play Series" owner="search">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:21.413381" level="INFO">Clicking element '//*[@resource-id="com.ais.mimo.AISPlay:id/fragment_movie_info_subscribe_button"]'.</msg>
+<msg time="2024-04-22T18:14:21.846478" level="INFO">xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/fragment_movie_info_subscribe_button"]</msg>
+<arg>${btn_play}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T18:14:21.409365" elapsed="0.437113"/>
+</kw>
+<status status="PASS" start="2024-04-22T18:14:21.408364" elapsed="0.438114"/>
+</kw>
+<kw name="Verify Play Series" owner="search">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:23.906065" level="INFO">criteria is com.ais.mimo.AISPlay:id/video_controller_time_current
+criteria is com.ais.mimo.AISPlay:id/video_controller_time_current</msg>
+<arg>${lbl_time_current}</arg>
+<arg>10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-04-22T18:14:21.848475" elapsed="2.057590"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:24.431184" level="INFO">Element 'com.ais.mimo.AISPlay:id/video_controller_time_current' text is '00:00' </msg>
+<msg time="2024-04-22T18:14:24.431184" level="INFO">criteria is com.ais.mimo.AISPlay:id/video_controller_time_current</msg>
+<msg time="2024-04-22T18:14:24.431184" level="INFO">${before} = 00:00</msg>
+<var>${before}</var>
+<arg>${lbl_time_current}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-04-22T18:14:23.907049" elapsed="0.524135"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:41.846767" level="INFO">xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]
+xpath criteria: //*[@resource-id="com.ais.mimo.AISPlay:id/video_controller_pause"]</msg>
+<arg>${btn_pause}</arg>
+<arg>20s</arg>
+<doc>Waits until element specified with `locator` disappears from current page.</doc>
+<status status="PASS" start="2024-04-22T18:14:24.432180" elapsed="17.414587"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:41.852765" level="INFO">Clicking element '//*[@resource-id="android:id/content"]/android.widget.FrameLayout'.</msg>
+<msg time="2024-04-22T18:14:43.526189" level="INFO">xpath criteria: //*[@resource-id="android:id/content"]/android.widget.FrameLayout</msg>
+<arg>${btn_framelayout}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-04-22T18:14:41.847764" elapsed="1.678425"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2024-04-22T18:14:43.714233" level="INFO">Element 'com.ais.mimo.AISPlay:id/video_controller_time_current' text is '00:17' </msg>
+<msg time="2024-04-22T18:14:43.714233" level="INFO">criteria is com.ais.mimo.AISPlay:id/video_controller_time_current</msg>
+<msg time="2024-04-22T18:14:43.715234" level="INFO">${after} = 00:17</msg>
+<var>${after}</var>
+<arg>${lbl_time_current}</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2024-04-22T18:14:43.526189" elapsed="0.189045"/>
+</kw>
+<kw name="Split String" owner="String">
+<msg time="2024-04-22T18:14:43.716231" level="INFO">${before} = ['00', '00']</msg>
+<var>${before}</var>
+<arg>${before}</arg>
+<arg>:</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2024-04-22T18:14:43.715234" elapsed="0.000997"/>
+</kw>
+<kw name="Convert To Number" owner="BuiltIn">
+<msg time="2024-04-22T18:14:43.717234" level="INFO">${before_seconds} = 0.0</msg>
+<var>${before_seconds}</var>
+<arg>${before}[1]</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<status status="PASS" start="2024-04-22T18:14:43.716231" elapsed="0.001003"/>
+</kw>
+<kw name="Split String" owner="String">
+<msg time="2024-04-22T18:14:43.719233" level="INFO">${after} = ['00', '17']</msg>
+<var>${after}</var>
+<arg>${after}</arg>
+<arg>:</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<status status="PASS" start="2024-04-22T18:14:43.718233" elapsed="0.001000"/>
+</kw>
+<kw name="Convert To Number" owner="BuiltIn">
+<msg time="2024-04-22T18:14:43.720233" level="INFO">${after_seconds} = 17.0</msg>
+<var>${after_seconds}</var>
+<arg>${after}[1]</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<status status="PASS" start="2024-04-22T18:14:43.719233" elapsed="0.001000"/>
+</kw>
+<if>
+<branch type="IF" condition="${after_seconds} &gt; ${before_seconds}">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-22T18:14:43.723235" level="INFO">ture</msg>
+<arg>ture</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-22T18:14:43.722234" elapsed="0.002000"/>
+</kw>
+<status status="PASS" start="2024-04-22T18:14:43.721234" elapsed="0.003000"/>
+</branch>
+<branch type="ELSE">
+<kw name="Fail" owner="BuiltIn">
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2024-04-22T18:14:43.726234" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-04-22T18:14:43.725234" elapsed="0.002004"/>
+</branch>
+<status status="PASS" start="2024-04-22T18:14:43.721234" elapsed="0.006004"/>
+</if>
+<status status="PASS" start="2024-04-22T18:14:21.847490" elapsed="21.879748"/>
+</kw>
+<kw name="Press And Verify Forward Series">
+<msg time="2024-04-22T18:14:43.736236" level="FAIL">No keyword with name 'Press And Verify Forward Series' found.</msg>
+<status status="FAIL" start="2024-04-22T18:14:43.736236" elapsed="0.001001">No keyword with name 'Press And Verify Forward Series' found.</status>
+</kw>
+<kw name="Press And Verify Backward Series">
+<status status="NOT RUN" start="2024-04-22T18:14:43.743241" elapsed="0.000000"/>
+</kw>
+<kw name="Press Pause And Verify">
+<status status="NOT RUN" start="2024-04-22T18:14:43.753244" elapsed="0.000000"/>
+</kw>
+<kw name="Drag Progress bar Forward">
+<status status="NOT RUN" start="2024-04-22T18:14:43.768246" elapsed="0.000000"/>
+</kw>
+<kw name="Drag Progress bar Backward">
+<status status="NOT RUN" start="2024-04-22T18:14:43.775247" elapsed="0.000000"/>
+</kw>
+<tag>007</tag>
+<status status="FAIL" start="2024-04-22T18:13:34.758463" elapsed="69.022785">No keyword with name 'Press And Verify Forward Series' found.</status>
+</test>
+<status status="FAIL" start="2024-04-22T18:13:32.177124" elapsed="71.661152"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">007</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Ais Play">Ais Play</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

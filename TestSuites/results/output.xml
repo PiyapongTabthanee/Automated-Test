@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-09T11:59:58.413982" rpa="false" schemaversion="5">
+<suite id="s1" name="Search" source="C:\Users\piyao\OneDrive\Desktop\test7\TestSuites\search.robot">
+<test id="s1-t1" name="Search007 Open Browser" line="43">
+<kw name="Open url" owner="search">
+<kw name="Open Browser" owner="Browser">
+<msg time="2024-04-09T12:00:01.507910" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2024-04-09T12:00:01.510907" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\piyao\\OneDrive\\Desktop\\test7\\TestSuites\\results\\browser\\traces\\60c6a95f-b6c4-4fda-ae9c-f1cbeabb1d20"}</msg>
+<msg time="2024-04-09T12:00:03.031290" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\piyao\\OneDrive\\Desktop\\test7\\TestSuites\\results\\browser\\traces\\60c6a95f-b6c4-4fda-ae9c-f1cbeabb1d20"}</msg>
+<msg time="2024-04-09T12:00:03.031290" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2024-04-09T12:00:03.135313" level="INFO">Successfully created context. </msg>
+<msg time="2024-04-09T12:00:03.135313" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2024-04-09T12:00:09.068388" level="INFO">Successfully initialized new page object and opened url: https://www.google.co.th</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2024-04-09T12:00:01.507910" elapsed="7.561479"/>
+</kw>
+<status status="PASS" start="2024-04-09T12:00:01.506021" elapsed="7.563368"/>
+</kw>
+<kw name="Input Text lang">
+<msg time="2024-04-09T12:00:09.101397" level="FAIL">No keyword with name 'Input Text lang' found. Did you try using keyword 'search.Input Text' and forgot to use enough whitespace between keyword and arguments?</msg>
+<arg>{Text}</arg>
+<status status="FAIL" start="2024-04-09T12:00:09.101397" elapsed="0.000000">No keyword with name 'Input Text lang' found. Did you try using keyword 'search.Input Text' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Enter" owner="search">
+<status status="NOT RUN" start="2024-04-09T12:00:09.103397" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Text" owner="search">
+<status status="NOT RUN" start="2024-04-09T12:00:09.110398" elapsed="0.000000"/>
+</kw>
+<tag>007</tag>
+<status status="FAIL" start="2024-04-09T12:00:01.499035" elapsed="7.616367">No keyword with name 'Input Text lang' found. Did you try using keyword 'search.Input Text' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<status status="FAIL" start="2024-04-09T11:59:58.417982" elapsed="11.807053"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">007</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Search">Search</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-09T12:00:01.507910" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>
