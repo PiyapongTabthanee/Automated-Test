@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-17T09:54:58.875158" rpa="false" schemaversion="5">
+<suite id="s1" name="Ais Play" source="C:\Users\piyao\OneDrive\Desktop\test7\TestSuites\ais_play.robot">
+<test id="s1-t1" name="Appium001_Open_And_Play_Vido" line="15">
+<kw name="Open_Application_AIS_PLAY">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2024-04-17T09:55:00.206371" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2024-04-17T09:55:00.205372" elapsed="0.016003">No application is open</status>
+</kw>
+<msg time="2024-04-17T09:55:00.225377" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2024-04-17T09:55:00.229382" level="FAIL">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</msg>
+<arg>remote_url=http://127.0.0.1:4723/wd/hubsession/afee247d-d3fb-4141-87d0-9b24730a8a6b</arg>
+<arg>platformName=Android</arg>
+<arg>appium:platformVersion=14</arg>
+<arg>appium:deviceName=adb-R9WWA03R8AL-Lgdz7x._adb-tls-connect._tcp</arg>
+<arg>appium:appPackage=com.ais.mimo.AISPlay</arg>
+<arg>appium:appActivity=net.vimmi.lib.ui.main.MainActivity</arg>
+<arg>fullReset=false</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2024-04-17T09:54:59.792274" elapsed="0.442105">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</status>
+</kw>
+<status status="FAIL" start="2024-04-17T09:54:59.790271" elapsed="0.445110">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</status>
+</kw>
+<tag>007</tag>
+<status status="FAIL" start="2024-04-17T09:54:59.789367" elapsed="0.447017">WebDriverException: Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+</status>
+</test>
+<status status="FAIL" start="2024-04-17T09:54:58.879161" elapsed="1.370220"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">007</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Ais Play">Ais Play</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-17T09:55:00.225377" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
